@@ -1,0 +1,119 @@
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F0EBE3;
+}
+.wrapper{
+    display: grid;
+    grid-auto-columns: 260px;
+    grid-gap: 0px;
+    width: 62vw;
+    padding:  6% 13%;
+    
+}
+.features-container{
+    width: 262px;
+    height: auto;
+    padding: 36px 44px;
+}
+#sedans-container{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+#suv-container{
+    background-color: hsl(184, 100%, 22%);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    grid-area: 1 / 2 / 2 / 3;
+}
+#luxury-container{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    grid-area: 1 / 3 / 2 / 4;
+}
+.images{
+    width: 50px;
+}
+h1{
+    color: hsl(0, 0%, 95%);
+    margin-top: 25px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 14px;
+    line-height: 1.6rem;
+    margin-top: 18px;
+}
+button{
+    width: 130px;
+    border: 2px solid #fff;
+    border-radius: 22px;
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-top: 18px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.sedan-btn{
+    color:  hsl(31, 77%, 52%);
+}
+.sedan-btn:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.suvs-btn{
+    color: hsl(184, 100%, 22%);
+}
+.suvs-btn:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.luxury-btn{
+    color: hsl(179, 100%, 13%);
+}
+.luxury-btn:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.attribution { 
+    font-size: 15px; 
+    text-align: center; 
+    margin-top: 80px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media screen and (max-width: 375px) {
+    .wrapper{
+        display: grid;
+        grid-template-rows: 260px;
+    
+    }
+    #sedans-container{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+        grid-area: unset;
+        height: 410px;
+    }
+    #suv-container{
+        grid-area: unset;
+        margin-top: 150px;
+    }
+    #luxury-container{
+        grid-area: unset;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    
+  }
